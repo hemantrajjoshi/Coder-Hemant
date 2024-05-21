@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+  color: #ffffff;
+  /* color: #fff; */
+}
+
+.hero-blue{
+    color:rgb(0, 0, 255);
+}
+
+/* nav bar */
+body{ 
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+
+    background-color:#151518}
+
+nav{
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    display: flex;
+    height: 100px;
+    width: auto;
+    background-color:#111124
+   
+}
+nav .logo{
+    height: 80px;
+    width: 80px;
+    margin: 10px 0 10px 100px;
+    transition: all 0.5s ;
+    cursor: pointer;
+}
+
+nav .logo:hover{
+    transform: scale(1.2);
+}
+nav #menu{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-left: 200px;
+}
+nav #menu ul{
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+}
+nav #menu ul li a i{
+    margin-right: 10px;
+}
+nav #menu ul li a{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    /* justify-content: space-around; */
+    margin-right: 100px;
+    font-size: 22px;
+    font-weight: 200;  
+    transition:  0.2s;
+    color: rgb(42, 74, 255);
+
+}
+nav #menu ul li a:hover{
+     color:rgb(227, 230, 249);
+}
+
+/* Content - 1  */
+#content-1{
+    padding: 0 100px 0 100px;
+}
+.order{
+    color: rgb(255, 255, 255);
+    margin: 30px 0 0 80px;
+    font-weight: 300;
+
+}
+
+.auth{
+    /* margin: 50px; */
+    border: 2px solid #ffffff56;
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    /* margin:30px 10px 20px 10px; */
+}
+  img.writer {
+    height: 50px;
+    width: 50px;
+    margin-left: 50px;
+    margin-top: 10px;
+ }
+
+ .auth h3{
+    font-size: 22px;
+    margin:15px 0 0 20px ;
+    font-weight: 500;
+
+ }
+  .auth h4{
+    font-size: 22px;
+    font-weight: 500;
+margin: 15px 20px 15px 500px;
+ }
+
+ .topic{
+margin-top: 50px;
+font-weight: 600;
+ }
+
+ .icons{
+    margin: 20px 0 0 -20px;
+}
+.icons h3{
+    margin: 20px;
+}
+ .icons i{
+    font-size: 35px;
+    margin-left: 20px;
+}
+.fa-brands{
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+.fa-facebook:hover{
+    color: blue;
+}
+.fa-instagram{
+    border-radius: 30%;
+}
+.fa-instagram:hover{
+    background: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80);
+}
+.fa-x-twitter:hover{
+    background-color: #fff;
+    border-radius: 50%;
+    color: black;
+}
+.fa-threads:hover{
+    background-color: #fff;
+    border-radius: 50%;
+    color: black;
+}
+.fa-github:hover{
+    background-color: #fff;
+    border-radius: 50%;
+    color: black;
+}
+  
+.para img.thumb-img{
+ height: 400px;
+ width: 800px;
+ margin: 30px;
+}

@@ -1,0 +1,307 @@
+*{
+    margin: 0;
+    padding: 0;
+  color: #ffffff;
+  /* color: #fff; */
+}
+
+.hero-blue{
+    color:rgb(0, 0, 255);
+}
+.active{
+    color:rgb(255, 255, 255);
+}
+/* nav bar */
+body{ 
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+margin: 0;
+    background-color:#151518}
+
+nav{
+    box-shadow: 0px 19px 55px 18px rgba(0, 0, 255, 0.495);
+    margin-top: 0px;
+    position: fixed;
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    display: flex;
+    height: 90px;
+    width: 100%; /* Adjust to fit the viewport width */
+    background-color:#111124;
+    top: 0; /* Stick to the top of the viewport */
+    z-index: 1000; /* Ensure it stays above other content */
+   
+}
+nav .logo{
+    height: 70px;
+    width: 70px;
+    margin: 10px 0 10px 100px;
+    transition: all 0.5s ;
+    cursor: pointer;
+}
+
+nav .logo:hover{
+    transform: scale(1.2);
+}
+nav #menu{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-left: 200px;
+}
+nav #menu ul{
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+}
+nav #menu ul li a i{
+    margin-right: 10px;
+}
+nav #menu ul li a{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    /* justify-content: space-around; */
+    margin-right: 100px;
+    font-size: 22px;
+    font-weight: 200;  
+    transition:  0.2s;
+    color: rgb(42, 74, 255);
+
+}
+nav #menu ul li a:hover{
+     color:rgb(227, 230, 249);
+}
+/* Sticky class */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    animation: fadeInDown 0.5s;
+  }
+  
+/* home page  */
+#home{
+    margin-top: 100px;
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    /* background: black url(images/fc.png) no-repeat center center; */
+    background-size: cover;
+    height: 78vh;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+}
+#home .content-1 {
+    max-width: 60%;
+}
+
+#home .content-1 h1{
+    position: absolute;
+    margin-top: 25px;
+    margin-left: 20px;
+    font-size: 45px;
+    color:rgb(255, 255, 255);
+
+}
+#home .content-1 p{
+    font-size: 25px;
+    line-height: 40px;
+    word-spacing: 4px;
+    padding: 20px;
+    margin-top: 130px;
+    margin-left: 40px;
+
+}
+#home .content-1 button{
+    padding: 15px;
+    color: #fff;
+    background-color: #0b0b6e;
+    border-radius: 20%;
+    border: 2px solid rgb(30, 45, 126);
+    font-size: 25px;
+    cursor: pointer;
+    margin-left: 40px;
+    margin-top: 30px;
+    transition:all 0.4s ease-in;
+    
+
+}
+
+#home .content-1 button:hover{
+    cursor: pointer;
+    background-color:#020238;
+    font-size: 26px;
+}
+#home .content-2 img{
+    height: 350px;
+    margin: 30px 0 0 100px; 
+}
+#home .content-2 .icons{
+    margin: 30px 0 0 120px;
+}
+#home .content-2 .icons i{
+    font-size: 40px;
+    margin-left: 20px;
+}
+.fa-brands{
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+.fa-facebook:hover{
+    color: blue;
+}
+.fa-instagram{
+    border-radius: 30%;
+}
+.fa-instagram:hover{
+    background: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80);
+}
+.fa-x-twitter:hover{
+    background-color: #fff;
+    border-radius: 50%;
+    color: black;
+}
+.fa-threads:hover{
+    background-color: #fff;
+    border-radius: 50%;
+    color: black;
+}
+.fa-github:hover{
+    background-color: #fff;
+    border-radius: 50%;
+    color: black;
+}
+/*  page 1 */
+
+#page-1{
+    height: 100vh;
+}
+#page-1 h1{
+    margin:50px 0 0 150px;
+}
+#page-1 h1 i{
+    font-size: 25px;
+    margin-left: 10px;
+}
+#page-1 h1::after{
+    content: "";
+    width: 100px;
+    height: 5px;
+    background-color: #fff;
+    position: absolute;
+    margin: 50px 20px 0 -260px;
+}
+
+/* Box  model ---------------------- */
+#content-1{
+     display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin: 80px 150px 100px 150px;
+    
+}
+ .box{
+  
+    box-shadow: -4px 0px 45px 0px  rgb(0, 60, 255);    border-radius: 20px;
+    flex: 1 1 calc(50% - 50px); /* 2 boxes per row */
+     box-sizing: border-box; /* Makes padding and border part of the total width */
+     padding: 15px; /* Adds padding inside each box */
+     background-color: #000000; /* Adds a background color */
+     text-align: center;
+}
+.box img.thumb {
+    height: 200px;
+    width: 380px;
+    margin: 10px 0 20px 0;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    overflow: hidden;
+}
+ .box img.thumb:hover{
+   
+    transform: scale(1.1);
+}
+.box h2{
+    color: #fff;
+    text-align: left;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    margin-top: -10px;
+}
+.box a{
+    text-decoration: none; /* Remove default underline */
+    color: #000;
+}
+.box p{ 
+    line-height: 22px;
+    color: gainsboro;
+    text-align: left;
+    font-weight: 200;
+}
+
+.box .auth{
+    border: 2px solid #ffffff56;
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    /* margin:30px 10px 20px 10px; */
+}
+ .box img.writer {
+    height: 50px;
+    width: 50px;
+ }
+
+ .box .auth h3{
+    font-size: 18px;
+    margin:15px 0 0 5px ;
+    font-weight: 500;
+
+ }
+ .box .auth h4{
+    font-size: 18px;
+    font-weight: 500;
+margin: 15px 20px 15px 20px;
+ }
+  
+
+  /* Media queries for responsiveness */
+  @media (max-width: 1200px) {
+    .Box {
+        flex: 1 1 calc(33.33% - 10px); /* 3 boxes per row */
+    }
+}
+
+@media (max-width: 900px) {
+    .Box {
+        flex: 1 1 calc(50% - 10px); /* 2 boxes per row */
+    }
+}
+
+@media (max-width: 600px) {
+    .Box {
+        flex: 1 1 calc(100% - 10px); /* 1 box per row */
+    }
+
+     .box img.thumb {
+        height: 180px;
+        width: 350px;
+        margin: 20px 0 20px 0;
+        border-radius: 20px;
+        transition: all 0.3s ease;
+        cursor: pointer;
+    }
+    .box img.thumb:hover{
+        transform: scale(1.1);
+    }
+}
