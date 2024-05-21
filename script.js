@@ -17,3 +17,20 @@ function stickyNavbar() {
 
 // When the user scrolls the page, execute stickyNavbar
 window.onscroll = function() { stickyNavbar() };
+
+// active function 
+function active(event) {
+  // Prevent the default anchor behavior
+  event.preventDefault();
+  
+  // Remove the active class from all navigation links
+  const navLinks = document.querySelectorAll('#menu a');
+  navLinks.forEach(link => link.classList.remove('active'));
+  
+  // Add the active class to the clicked link
+  event.currentTarget.classList.add('active');
+  
+  // Optionally, redirect to the link's href after a delay (or handle with AJAX)
+  window.location.href = event.currentTarget.href;
+}
+
