@@ -90,7 +90,7 @@ nav #menu ul li a:hover{
     flex-direction: row;
     /* margin:30px 10px 20px 10px; */
 }
-  img.writer {
+ .auth img.writer {
     height: 50px;
     width: 50px;
     margin-left: 50px;
@@ -109,6 +109,8 @@ nav #menu ul li a:hover{
 margin: 15px 20px 15px 500px;
  }
 
+
+/* blogs post */
  .topic{
 margin-top: 50px;
 font-weight: 600;
@@ -173,3 +175,79 @@ span.bold{
 /* read more */
 
 
+/* Box  model ---------------------- */
+#content-2{
+    display: flex;
+   flex-wrap: wrap;
+   gap: 50px;
+   margin: 80px 150px 100px 150px;
+   
+}
+#content-2 .box{
+ 
+   box-shadow: -4px 0px 45px 0px  rgb(0, 60, 255);    border-radius: 20px;
+   flex: 1 1 calc(50% - 50px); /* 2 boxes per row */
+    box-sizing: border-box; /* Makes padding and border part of the total width */
+    padding: 15px; /* Adds padding inside each box */
+    background-color: #000000; /* Adds a background color */
+    text-align: center;
+}
+#content-2 .box img.thumb {
+   height: 200px;
+   width: 380px;
+   margin: 10px 0 20px 0;
+   border-radius: 20px;
+   transition: all 0.3s ease;
+   cursor: pointer;
+   overflow: hidden;
+}
+#content-2 .box img.thumb:hover{
+  
+   transform: scale(1.1);
+}
+#content-2 .box h2{
+   color: #fff;
+   text-align: left;
+   cursor: pointer;
+   font-size: 25px;
+   font-weight: 500;
+   margin-bottom: 10px;
+   margin-top: -10px;
+}
+#content-2 .box a{
+   text-decoration: none; /* Remove default underline */
+   color: #000;
+}
+#content-2 .box p{ 
+   line-height: 22px;
+   color: gainsboro;
+   text-align: left;
+   font-weight: 200;
+}
+
+#content-2 .box .autho{
+   border: 2px solid #ffffff56;
+   padding: 10px;
+   border-radius: 20px;
+   margin-top: 20px;
+   display: flex;
+   flex-direction: row;
+   /* margin:30px 10px 20px 10px; */
+}
+#content-2 .box .autho img.writer {
+   height: 50px;
+   width: 50px;
+}
+
+#content-2 .box .autho h3{
+   font-size: 18px;
+   margin:15px 0 0 5px ;
+   font-weight: 500;
+
+}
+#content-2 .box .autho h4{
+   font-size: 18px;
+   font-weight: 500;
+margin: 15px 20px 15px 20px;
+}
+ 

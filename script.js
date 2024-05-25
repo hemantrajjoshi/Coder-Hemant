@@ -34,3 +34,21 @@ function active(event) {
   window.location.href = event.currentTarget.href;
 }
 
+// NEWSLETTER FUNCTIONALTY
+document.addEventListener("DOMContentLoaded", function() {
+  let subID = document.getElementById("subID");
+  let form = document.getElementById("n-letter");
+
+  subID.onclick = function(event) {
+      event.preventDefault(); // Prevent form submission
+      
+      // Check if the form is valid
+      if (form.checkValidity()) {
+          alert("Newsletter Subscribed successfully!");
+          form.reset(); // Clear the form
+          subID.style.backgroundColor=""
+      } else {
+          alert("Please enter a valid email address.");
+      }
+  };
+});
