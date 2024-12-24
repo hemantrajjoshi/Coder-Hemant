@@ -180,7 +180,7 @@ span.bold{
     display: flex;
    flex-wrap: wrap;
    gap: 50px;
-   margin: 80px 150px 100px 150px;
+   /* margin: 80px 150px 100px 150px; */
    
 }
 #content-2 .box{

@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+body {
+    padding: 100px;
+    background-color: #f5f7fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#box {
+    border-radius: 20px;
+    width: 700px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px 30px;
+    align-items: center;
+    overflow-y: auto;
+    -ms-overflow-style: none;  /* IE 10+ */
+    scrollbar-width: none;
+    max-height: 70vh;    
+}
+#box h1 {
+    text-align: center;
+    font-size: 40px;
+    color: #333;
+    margin-bottom: 20px;
+}
+#input-container {
+    display: flex;
+    margin-bottom: 20px;
+}
+#input {
+    flex-grow: 1;
+    padding: 15px;
+    font-size: 30px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    margin: 20px 20px 20px 50px;
+  
+}
+#submit {
+    font-size: 16px;
+    border-radius: 10px;
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+#submit:hover {
+    background-color: #218838;
+}
+#todo-list {
+    list-style-type: none;
+    padding: 0;
+}
+.todo-item {
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color: #ededed;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.todo-item.completed {
+    background-color: #d4edda;
+    text-decoration: line-through;
+    color: #155724;
+}
+.todo-text {
+    flex-grow: 1;
+    margin-bottom: 10px;
+    width: 100%;
+}
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+.complete-button, .remove-button, .rename-button {
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px 10px;
+    margin-left: 10px;
+    transition: background-color 0.3s;
+}
+.complete-button {
+    background-color: #007bff;
+    color: white;
+}
+.complete-button:hover {
+    background-color: #0056b3;
+}
+.remove-button {
+    background-color: #dc3545;
+    color: white;
+}
+.remove-button:hover {
+    background-color: #c82333;
+}
+.rename-button {
+    background-color: #ffc107;
+    color: black;
+}
+.rename-button:hover {
+    background-color: #e0a800;
+}
+.confetti {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 9999;
+}
+.confetti-piece {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 0, 0, 0.5);
+    border-radius: 50%;
+    opacity: 0.7;
+    animation: confettiFall 1.5s ease-out infinite;
+}
+@keyframes confettiFall {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+    100% {
+        transform: translateY(100vh) rotate(720deg);
+    }
+}
+@keyframes confettiFade {
+    0%, 90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
